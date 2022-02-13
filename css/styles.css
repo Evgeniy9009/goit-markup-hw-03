@@ -54,23 +54,25 @@ img {
   cursor: pointer;
 }
 
-.section {
+.container {
+  box-sizing: border-box;
   width: 1200px;
   padding: 94px 15px;
   margin-left: auto;
   margin-right: auto;
-}
-.container {
-  display: flex;
 }
 /* ====  header  ==== */
 .header {
   border-bottom: 1px solid #ececec;
 }
 
-.header > .section {
+.header > .container {
   width: 1200px;
   padding: 0 15px;
+}
+
+.header div {
+  display: flex;
 }
 
 .navigation {
@@ -185,6 +187,11 @@ img {
   margin-left: 30px;
 }
 
+.specifics .section-title {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
 .section-subtitle {
   margin-bottom: 10px;
   font-weight: 700;
@@ -204,7 +211,7 @@ img {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
 }
 
@@ -235,8 +242,12 @@ img {
   margin-right: 30px;
 }
 
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-subtitle {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -244,7 +255,6 @@ img {
   text-align: center;
 }
 .team-description {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -257,7 +267,7 @@ img {
   background-color: var(--dark-background-color);
 }
 
-.footer .section {
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -298,6 +308,7 @@ img {
 /* ====  portfolio  ==== */
 
 .project-list {
+  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -323,7 +334,13 @@ img {
 }
 
 .job-list {
+  display: flex;
   flex-wrap: wrap;
+}
+
+.job-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .job-list-item:not(:nth-child(3n)) {
@@ -339,10 +356,6 @@ img {
   background-color: var(--primary-text-color-theme-dark);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-}
-
-.job-list-item img {
-  margin-bottom: 20px;
 }
 
 .job-subtitle {
