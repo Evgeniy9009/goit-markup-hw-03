@@ -57,7 +57,7 @@ img {
 .container {
   box-sizing: border-box;
   width: 1200px;
-  padding: 94px 15px;
+  padding: 94px 15px 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -145,6 +145,12 @@ img {
   background: var(--primary-background);
   text-align: center;
 }
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -174,8 +180,11 @@ img {
 }
 
 /* ==== ОСОБЕННОСТИ ==== */
-.section-list {
+.specifics .section-list {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .specifics .item {
@@ -190,6 +199,7 @@ img {
 .specifics .section-title {
   margin-bottom: 0;
   font-size: 14px;
+  display: none;
 }
 
 .section-subtitle {
@@ -216,13 +226,25 @@ img {
 }
 
 .work .section-list {
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.work .item {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 /* ==== НАША КОМАНДА ==== */
 
 .team {
   background-color: var(--light-background-color);
+}
+
+.team .container {
+  padding-bottom: 94px;
 }
 
 .team-list {
@@ -324,6 +346,7 @@ img {
   text-align: center;
   background: var(--light-background-color);
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .project-btn:hover,
@@ -341,6 +364,8 @@ img {
 .job-content {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .job-list-item:not(:nth-child(3n)) {
