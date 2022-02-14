@@ -57,18 +57,13 @@ img {
 .container {
   box-sizing: border-box;
   width: 1200px;
-  padding: 94px 15px 0;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
 /* ====  header  ==== */
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.header > .container {
-  width: 1200px;
-  padding: 0 15px;
 }
 
 .header div {
@@ -144,9 +139,6 @@ img {
 .hero {
   background: var(--primary-background);
   text-align: center;
-}
-
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -180,6 +172,12 @@ img {
 }
 
 /* ==== ОСОБЕННОСТИ ==== */
+
+.specifics {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
 .specifics .section-list {
   display: flex;
   justify-content: space-between;
@@ -217,6 +215,11 @@ img {
 }
 /* ==== Чем мы занимаемся ==== */
 
+.work {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
 .section-title {
   margin-bottom: 50px;
   font-weight: bold;
@@ -241,9 +244,7 @@ img {
 
 .team {
   background-color: var(--light-background-color);
-}
-
-.team .container {
+  padding-top: 47px;
   padding-bottom: 94px;
 }
 
@@ -289,7 +290,7 @@ img {
   background-color: var(--dark-background-color);
 }
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -328,6 +329,11 @@ img {
 }
 
 /* ====  portfolio  ==== */
+
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .project-list {
   display: flex;
